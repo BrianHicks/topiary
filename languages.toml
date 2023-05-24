@@ -23,6 +23,11 @@ name = "ocaml_interface"
 extensions = ["mli"]
 
 [[language]]
+name = "ruby"
+extensions = ["rb", "rake", "rakefile", "irb", "gemfile", "gemspec", "Rakefile", "Gemfile", "rabl", "jbuilder", "jb", "Podfile", "podspec"]
+indent = "  " # 2 spaces
+
+[[language]]
 name = "rust"
 extensions = ["rs"]
 indent = "    " # 4 spaces
