@@ -41,6 +41,7 @@ tree-sitter-json = "0.19"
 tree-sitter-nickel = { git = "https://github.com/nickel-lang/tree-sitter-nickel", rev = "cf1c52a53a527505515add41da90f8a575798987" }
 tree-sitter-ocaml = { git = "https://github.com/tree-sitter/tree-sitter-ocaml" }
 tree-sitter-query = { git = "https://github.com/nvim-treesitter/tree-sitter-query" }
+tree-sitter-ruby = "0.20.0"
 tree-sitter-rust = "0.20.3"
 tree-sitter-toml = "0.20.0"
 unescape = "0.1"

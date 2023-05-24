@@ -1377,6 +1377,7 @@ dependencies = [
  "tree-sitter-nickel",
  "tree-sitter-ocaml",
  "tree-sitter-query",
+ "tree-sitter-ruby",
  "tree-sitter-rust",
  "tree-sitter-toml",
  "unescape",
@@ -1472,6 +1473,16 @@ dependencies = [
 name = "tree-sitter-query"
 version = "0.1.0"
 source = "git+https://github.com/nvim-treesitter/tree-sitter-query#e97504446f14f529d5a8e649667d3d60391e4dfd"
+dependencies = [
+ "cc",
+ "tree-sitter",
+]
+
+[[package]]
+name = "tree-sitter-ruby"
+version = "0.20.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0ac30cbb1560363ae76e1ccde543d6d99087421e228cc47afcec004b86bb711a"
 dependencies = [
  "cc",
  "tree-sitter",
