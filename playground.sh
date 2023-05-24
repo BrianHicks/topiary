@@ -1,5 +1,5 @@
 #!/usr/bin/env nix-shell
-#!nix-shell -i bash --packages inotify-tools
+#!nix-shell -i bash --packages fswatch
 #shellcheck shell=bash
 
 # "Quick-and-Dirty" Topiary Playground
@@ -100,10 +100,8 @@ main() {
     # files, so we wait on multiple events. This *may* not be an
     # exhaustive list; you are encouraged to experiment if the
     # playground doesn't refresh when you expect it to!
-    inotifywait \
-      -qq \
-      --event modify \
-      --event move_self \
+    fswatch \
+      --one-event \
       "${query}" "${input}"
   done
 
